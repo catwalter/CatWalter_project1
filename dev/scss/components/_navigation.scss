@@ -3,14 +3,16 @@
 ============= */
 nav{
     ul{
-        display: flex
+        display: flex;
         justify-content: flex-end;
         align-items: center;
         li{
             margin-left: 4vw;
             a:link, a:visited{
                 
-                &:hover, &:active
+                &:hover, &:active{
+                    
+                }
             }
         }
     }
