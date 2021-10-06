@@ -384,8 +384,17 @@ p {
 
 h1 {
   font-family: "Roboto", sans-serif;
-  font-size: 6.25rem;
-  color: red;
+  font-size: 12.5rem;
+  color: white;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+}
+
+p {
+  font-family: "open-sans", sans-serif;
 }
 
 /* =============
@@ -420,12 +429,24 @@ nav ul {
 nav ul li {
   margin-left: 4vw;
 }
+nav ul li a:link, nav ul li a:visited {
+  font-family: "open-sans", sans-serif;
+  text-decoration: none;
+  color: seagreen;
+  transition: 0.25s;
+  font-size: 0.75rem;
+  font-weight: 300;
+}
+nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav ul li a:visited:active {
+  color: slategray;
+}
+
 /* =============
     Header
 ============= */
 header {
   position: fixed;
-  background-color: wheat;
+  background-color: white;
   width: 100%;
   z-index: 100;
 }
@@ -469,12 +490,14 @@ header > div aside a {
   }
 }
 #hero > div #hero-content {
+  font-size: 6.25rem;
   color: white;
   text-align: center;
 }
 #hero > div #hero-content h1 {
-  font-size: 5rem;
+  font-size: 6.25rem;
   font-weight: 900;
+  text-shadow: 10px;
   line-height: 117px;
   text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.2);
 }
@@ -490,7 +513,8 @@ header > div aside a {
 }
 #hero > div #hero-content h1 h2 {
   font-size: 1.875rem;
-  font-weight: 400;
+  font-weight: 900;
+  text-shadow: 10px;
   line-height: 47px;
   text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
 }
@@ -538,11 +562,12 @@ header > div aside a {
   }
 }
 #content > div h1 {
-  font-size: 2.1875rem;
-  margin-bottom: 10px;
+  font-size: 3.75rem;
+  margin-bottom: 30px;
 }
 #content > div p {
-  font-size: 1.125rem;
-  line-height: 1.875rem;
+  font-size: 1rem;
+  line-height: 1.375rem;
+  margin-top: 15px;
   text-align: justify;
 }

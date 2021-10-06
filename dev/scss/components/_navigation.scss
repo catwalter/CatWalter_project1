@@ -9,9 +9,15 @@ nav{
         li{
             margin-left: 4vw;
             a:link, a:visited{
+                font-family: 'open-sans', sans-serif;
+                text-decoration: none;
+                color: seagreen;
+                transition: 0.25s;
+                font-size: rem-calc(12);
+                font-weight: 300;
                 
                 &:hover, &:active{
-                    
+                    color: slategray;
                 }
             }
         }
