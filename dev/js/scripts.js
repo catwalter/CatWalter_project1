@@ -1,4 +1,7 @@
 import { gsap } from "gsap";
+import { GSDevTools } from "gsap/GSDevTools";
+
+gsap.registerPlugin(GSDevTools);
 
 const mainTL = gsap.timeline();
 
@@ -23,6 +26,9 @@ mainTL.add(paintbrushZigZag())
 
 
 
+
+
+GSDevTools.create();
 //mainTL.to("#painting-bullseye", {duration:2, scale:3, y:"-=600"})
 
 

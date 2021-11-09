@@ -369,6 +369,10 @@ a {
   text-decoration: none;
 }
 
+.gs-dev-tools {
+  z-index: 1000;
+}
+
 /* =============
     Typography
 ============= */
