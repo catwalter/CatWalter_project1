@@ -5,24 +5,22 @@ gsap.registerPlugin(GSDevTools);
 
 const mainTL = gsap.timeline();
 
-function paintbrushZigZag(){
+function FadeIn(){
+    const tl = gsap.timeline()
+    tl.from("#painting-bullseye", {duration: 2.5, scaleX: 0})
+    tl.from("#painting-2", {duration: 2.5, scaleX: 0}) 
+    tl.from("#cottage", {duration: 2.5, scaleX: 0})
+    tl.from("#black-and-white-tree", {duration: 2.5, scaleX: 0})
+    tl.from("#painting-5", {duration: 2.5, scaleX: 0})
+    
 
-    const tl = gsap.timeline();
-    tl.to("#painting-bullseye", {duration:2, scale:3})
     return tl;
-
-}
-function cottage(){
-
-    const tl = gsap.timeline();
-    tl.to("#cottage", {duration:2, scale:3})
-    return tl;
-
 }
 
 
-mainTL.add(paintbrushZigZag())
-        .add(cottage())
+
+mainTL.add(FadeIn())
+
 
 
 
