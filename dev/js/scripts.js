@@ -60,7 +60,20 @@ function backToTop(){
     gsap.set("#preloader", {display:"none"})
 }
 
+
 mainTL.add(Paintings())
+
+
+
+    const tl = gsap.timeline()
+    mainTL.from("#hero",{duration:4,alpha:0,scale:5,y:600})
+.from("#h1hero",{duration:1, y:+-500, rotation:180})
+.from("#h2hero", {duration:2, y:+-500, scale:4})
+
+mainTL.from("#title-content",{duration:4,alpha:0,scale:3})
+mainTL.from("#content-p",{duration:2,alpha:0,rotation: 180}, "-=50%")
+
+
 
 
 
@@ -68,13 +81,3 @@ mainTL.add(Paintings())
 
 
 GSDevTools.create();
-
-
-
-
-mainTL.from("#hero",{duration:4,alpha:0,scale:5,y:600})
-.from("#h1hero",{duration:1, y:+-500, rotation:180})
-.from("#h2hero", {duration:2, y:+-500, scale:4})
-
-mainTL.from("#title-content",{duration:4,alpha:0,scale:3})
-mainTL.from("#content-p",{duration:2,alpha:0,rotation: 180}, "-=50%")
