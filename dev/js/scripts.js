@@ -65,7 +65,6 @@ mainTL.add(Paintings())
 
 
 
-    const tl = gsap.timeline()
     mainTL.from("#hero",{duration:4,alpha:0,scale:5,y:600})
 .from("#h1hero",{duration:1, y:+-500, rotation:180})
 .from("#h2hero", {duration:2, y:+-500, scale:4})
